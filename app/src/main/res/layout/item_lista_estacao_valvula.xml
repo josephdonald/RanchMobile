@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_id_estacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID Estacao"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/item_nome_estacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@+id/item_id_estacao"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/item_descricao_estacao"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="2dp"
+        android:hint="descricao"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/item_nome_estacao"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>

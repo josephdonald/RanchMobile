@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PerfilEstacaoActivity"
+    android:background="@drawable/background_fundo"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="ESTACÃO:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_nome_estacao"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Estação NOME"
+                android:textColor="@color/textoMenu"
+                android:textSize="20sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_nome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+            <TextView
+                android:id="@+id/tv_id_estacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Estação"
+                android:textColor="@color/textoDados"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_descricao_est"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginTop="8dp"
+                android:text="Descrição:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+            <TextView
+                android:id="@+id/tv_dados_descricao_est"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Dados de descrição"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_descricao_est"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+            <TextView
+                android:id="@+id/tv_latitude_est"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Latitude:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_descricao_est" />
+
+            <TextView
+                android:id="@+id/tv_dados_latitude_est"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Dados latitude"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_latitude_est"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+            <TextView
+                android:id="@+id/tv_longitude_est"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Longitude:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_latitude_est" />
+
+            <TextView
+                android:id="@+id/tv_dados_longitude_est"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Dados longitude"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_longitude_est"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+            <TextView
+                android:id="@+id/tv_status_est"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Status:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_longitude_est" />
+
+            <TextView
+                android:id="@+id/tv_dados_status_est"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Dados status"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_status_est"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+
+            <TextView
+                android:id="@+id/tv_valv_est"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Válvula:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_status_est" />
+
+            <TextView
+                android:id="@+id/tv_id_valv_est"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:hint="Id válvula"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                android:visibility="invisible"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_valv_est"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+            <TextView
+                android:id="@+id/tv_nome_valv_est"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Nome valvula"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_id_valv_est"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_id_valv_est" />
+
+            <TextView
+                android:id="@+id/tv_umid_1_est"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Umidade 1:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/tv_valv_est" />
+
+            <TextView
+                android:id="@+id/tv_dados_umid_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Dados umidade 1"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_umid_1_est"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="119dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="36dp" />
+
+            <TextView
+                android:id="@+id/tv_umid_2_est"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Umidade 2:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_umid_1_est" />
+
+            <TextView
+                android:id="@+id/tv_umid_3_est"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Umidade 3:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_umid_2_est" />
+
+            <TextView
+                android:id="@+id/tv_temp_solo_est"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Temperatura do Solo:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_umid_3_est" />
+
+            <TextView
+                android:id="@+id/tv_tensao_bateria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tensão bateria:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_temp_solo_est" />
+
+            <TextView
+                android:id="@+id/tv_tempo_leitura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Leitura em:"
+                android:textColor="@color/textoMenu"
+                android:textSize="@dimen/titulo_item"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tensao_bateria" />
+
+            <TextView
+                android:id="@+id/tv_dados_umid_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Dados umidade 2"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_umid_2_est"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+            <TextView
+                android:id="@+id/tv_dados_umid_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Dados umidade 3"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_umid_3_est"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+            <TextView
+                android:id="@+id/tv_dados_temp_solo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Temperatura"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_temp_solo_est"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_temp_solo_est" />
+
+            <TextView
+                android:id="@+id/tv_dados_bateria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Dados bateria"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_tensao_bateria"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_tensao_bateria" />
+
+            <TextView
+                android:id="@+id/tv_dados_tempo_leitura"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="tempo leitura"
+                android:textColor="@color/textoDados"
+                android:textSize="@dimen/texto_dados"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_tempo_leitura"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_tempo_leitura" />
+
+            <Button
+                android:id="@+id/bt_localizar"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/side_nav_bar"
+                android:padding="8dp"
+                android:text="Localizar no Maps"
+                android:textColor="@color/textoMenu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tempo_leitura" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

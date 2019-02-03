@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#b76165</color>
+    <color name="tom">#4169e1</color>
+    <color name="sobretom">#00695c</color>
+    <color name="tomintermediario">#009688</color>
+    <color name="textoDados">#F5FFFA</color>
+    <color name="textoMenu">#f5fffa</color>
+</resources>

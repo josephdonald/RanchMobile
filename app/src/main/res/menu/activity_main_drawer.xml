@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_estacoes"
+            android:icon="@drawable/ic_settings_input_antenna_black_24dp"
+            android:title="Estações" />
+        <item
+            android:id="@+id/nav_valvulas"
+            android:icon="@drawable/ic_settings_input_component_black_24dp"
+            android:title="Válvulas" />
+        <item
+            android:id="@+id/nav_estatisticas"
+            android:icon="@drawable/ic_show_chart_black_24dp"
+            android:title="Estatisticas" />
+        <item
+            android:id="@+id/nav_configuracao"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configurações" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
